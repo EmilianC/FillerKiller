@@ -1,0 +1,30 @@
+{
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+			"name": "run",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "preLaunchTask": "Build",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceRoot}/target/debug/filler_killer.exe",
+            "linux": {
+                "program": "${workspaceRoot}/target/debug/filler_killer"
+            },
+            "args": []
+        },
+        {
+			"name": "run release",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "preLaunchTask": "Build Release",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceRoot}/target/release/filler_killer.exe",
+            "linux": {
+				"program": "${workspaceRoot}/target/release/filler_killer"
+            },
+			"args": []
+        }
+    ]
+}
